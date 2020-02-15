@@ -45,3 +45,49 @@ git reset  [filename][*]
 ## commiting stashed files to git 
 
 git commit -m "message before commit "
+
+## To view all git logs 
+
+git log 
+
+### How ot download from a remote git directory 
+
+git clone [link]
+
+## how to get all details of a repo
+
+git remote -v -----> versions of the project 
+git branch -a ---->>> get all branches of a repo 
+
+### To see the changes before commiting  
+
+ git diff
+
+
+ ## Before commititng do a push to the git repository 
+ git pull origin master 
+
+ ## create a branch 
+
+ git branch [branchname]
+ git checkout [branchname]
+
+ check branch 
+
+ git branch -a 
+
+ ## workflow 
+
+ create a branch 
+ git checkout branch
+ git add  * 
+ git commit 
+ git push 
+ git checkout master 
+ git merge [branch]
+ git push origin master 
+ git branch --merged 
+ git barnch -d [branchmain]   ------->  only local branch deleted 
+ git push origin --delete [branch]
+
+
