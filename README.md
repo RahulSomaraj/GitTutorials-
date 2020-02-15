@@ -36,6 +36,7 @@ data
 ## to stage the files to git 
 
 git add [filename][*]
+
 git add -A -----> add all file to staging area
 
 ## reset from staging 
@@ -57,6 +58,7 @@ git clone [link]
 ## how to get all details of a repo
 
 git remote -v -----> versions of the project 
+
 git branch -a ---->>> get all branches of a repo 
 
 ### To see the changes before commiting  
@@ -79,17 +81,29 @@ git branch -a ---->>> get all branches of a repo
  ## workflow 
 
  create a branch 
+ 
  git checkout branch
+ 
  git add  * 
+ 
  git commit 
+ 
  git push 
+ 
  git checkout master 
+ 
  git pull
+ 
  git merge [branch]
+ 
  git push origin master 
+ 
  git branch --merged 
+ 
  git branch -d [branchmain]   ------->  only local branch deleted 
+ 
  git push origin --delete [branch]
+ 
 
 
 ## stashing  before creating a branch 
