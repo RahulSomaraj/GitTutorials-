@@ -84,10 +84,18 @@ git branch -a ---->>> get all branches of a repo
  git commit 
  git push 
  git checkout master 
+ git pull
  git merge [branch]
  git push origin master 
  git branch --merged 
- git barnch -d [branchmain]   ------->  only local branch deleted 
+ git branch -d [branchmain]   ------->  only local branch deleted 
  git push origin --delete [branch]
+
+
+## stashing  before creating a branch 
+
+git stash
+
+git stash pop 
 
 
