@@ -16,6 +16,12 @@ git --help -----------> list of all details in the git
                         all commands typically its like 
                         an index for all commands 
 
+### For already existing project push to git 
+
+add all files ----> git add .
+commit all files ---------> git commit -m "message"
+git remote add origin "git@github" (repo link from clone) 
+
 
 ### Fror creating a local project a git repository 
 
