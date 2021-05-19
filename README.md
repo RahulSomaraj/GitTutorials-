@@ -119,3 +119,21 @@ git stash
 git stash pop 
 
 
+#### feature branches 
+
+
+$ git checkout -b myfeature develop
+Switched to a new branch "myfeature"
+
+$ git checkout develop
+Switched to branch 'develop'
+$ git merge --no-ff myfeature
+Updating ea1b82a..05e9557
+(Summary of changes)
+$ git branch -d myfeature
+Deleted branch myfeature (was 05e9557).
+$ git push origin develop
+
+
+https://nvie.com/posts/a-successful-git-branching-model/
+
