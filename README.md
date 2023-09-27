@@ -126,17 +126,23 @@ $ git checkout -b myfeature develop
 Switched to a new branch "myfeature"
 
 $ git checkout develop
+
 Switched to branch 'develop'
+
 $ git merge --no-ff myfeature
 Updating ea1b82a..05e9557
+
 (Summary of changes)
 $ git branch -d myfeature
+
 Deleted branch myfeature (was 05e9557).
 $ git push origin develop
 
 #### feature branches delete multiple branches at the same time 
-git push origin --delete $(git ls-remote --heads origin 'refs/heads/feature/*' | awk -F'/' '{print "feature/" $NF}'
 
+# git branch | grep 'feature/' | xargs git branch -d
+
+# git push origin --delete $(git ls-remote --heads origin 'feature/*' | awk -F/ '{print "feature/" $NF}')
 
 https://nvie.com/posts/a-successful-git-branching-model/
 
